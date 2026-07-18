@@ -33,12 +33,12 @@ CVE-2026-63030 (wp2shell) is a critical vulnerability discovered by **Adam Kues*
 
 ### 📊 Affected Versions
 
-| Version Range | Impact | Status |
-|---------------|--------|--------|
-| 6.9.0 - 6.9.4 | 🔴 RCE (Critical) | ❌ Vulnerable |
-| 7.0.0 - 7.0.1 | 🔴 RCE (Critical) | ❌ Vulnerable |
-| 6.8.0 - 6.8.5 | 🟡 SQLi (High) | ❌ Vulnerable |
-| 6.9.5+ / 7.0.2+ | ✅ Patched | ✅ Safe |
+| Version Range   | Impact            | Status        |
+| --------------- | ----------------- | ------------- |
+| 6.9.0 - 6.9.4   | 🔴 RCE (Critical) | ❌ Vulnerable |
+| 7.0.0 - 7.0.1   | 🔴 RCE (Critical) | ❌ Vulnerable |
+| 6.8.0 - 6.8.5   | 🟡 SQLi (High)    | ❌ Vulnerable |
+| 6.9.5+ / 7.0.2+ | ✅ Patched        | ✅ Safe       |
 
 ---
 
@@ -82,9 +82,9 @@ python3 wp2shell_intooutfile.py -f list.txt -t 10
 bash
               ___      __       ____
  _    _____  |_  |___ / /  ___ / / /
-| |/|/ / _ \/ __/(_-</ _ \/ -_) / / 
-|__,__/ .__/____/___/_//_/\__/_/_/  
-     /_/                            
+| |/|/ / _ \/ __/(_-</ _ \/ -_) / /
+|__,__/ .__/____/___/_//_/\__/_/_/
+     /_/
 
   wp2shell Scanner | Target: 100 | Threads: 10
   ============================================================
@@ -327,3 +327,4 @@ CVE-2026-63030
 Assetnote Research
 
 WordPress Security Advisory
+```
